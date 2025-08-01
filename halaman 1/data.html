@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Form Belajar</title>
+  <link rel="stylesheet" href="data.css">
+</head>
+<body>
+
+<header>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/4/49/Yellow_circle.svg" alt="logo">
+  <nav>
+    <button>Home</button>
+    <button>My Profile</button>
+    <button>Portofolio</button>
+    <button>Message Us</button>
+  </nav>
+</header>
+
+<hr class="divider">
+
+<div class="container">
+  <div class="form-container">
+    <h2>Form Belajar</h2>
+    <p>Ini adalah website latihan pertama</p>
+    <hr>
+    <form id="belajarForm">
+      <label>Nama : <input type="text" id="nama" placeholder="Nama lengkap"></label>
+      <label>Tanggal Lahir : <input type="date" id="tanggal"></label>
+      <label>Jenis Kelamin :
+        <input type="radio" name="gender" value="Laki-Laki">Laki-Laki
+        <input type="radio" name="gender" value="Perempuan">Perempuan
+      </label>
+      <label>Pesan : <textarea id="pesan" rows="3" placeholder="Tulis pesan di sini..."></textarea></label>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <div class="table-container">
+    <h2>Data Pendaftar</h2>
+    <hr>
+    <table id="dataTable">
+      <thead>
+        <tr>
+          <th>Nama</th>
+          <th>Tanggal Lahir</th>
+          <th>Jenis Kelamin</th>
+          <th>Pesan</th>
+          <th>Profile</th>
+          <th>Delete</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Ada Lovelace</td>
+          <td>December 10, 1815</td>
+          <td>Perempuan</td>
+          <td>Belajar Buat Website</td>
+          <td><a href="#">Klik Disini</a></td>
+          <td><span class="delete-icon">🗑️</span></td>
+        </tr>
+        <tr>
+          <td>Grace Hopper</td>
+          <td>December 9, 1906</td>
+          <td>Perempuan</td>
+          <td>Hello World</td>
+          <td><a href="#">Klik Disini</a></td>
+          <td><span class="delete-icon">🗑️</span></td>
+        </tr>
+        <tr>
+          <td>Margaret Hamilton</td>
+          <td>August 17, 1936</td>
+          <td>Perempuan</td>
+          <td>Test Dulu</td>
+          <td><a href="#">Klik Disini</a></td>
+          <td><span class="delete-icon">🗑️</span></td>
+        </tr>
+        <tr>
+          <td>Joan Clarke</td>
+          <td>June 24, 1917</td>
+          <td>Laki-Laki</td>
+          <td>Selalu Semangat</td>
+          <td><a href="#">Klik Disini</a></td>
+          <td><span class="delete-icon">🗑️</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<hr class="divider">
+<footer>Created By RevoU</footer>
+
+<script src="data.js"></script>
+</body>
+</html>
